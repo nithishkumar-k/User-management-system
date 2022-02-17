@@ -1,0 +1,250 @@
+{
+	"info": {
+		"_postman_id": "c97a726d-691c-4826-a998-8cf9f65bb9d9",
+		"name": "user management system",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json"
+	},
+	"item": [
+		{
+			"name": "localhost:5000/api/register",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n    \"name\" : \"tomy\",\r\n    \"email\" : \"tomy@gmail.com\",\r\n    \"password\" : \"123456\",\r\n    \"role\" : \"user\"\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "localhost:5000/api/register",
+					"host": [
+						"localhost"
+					],
+					"port": "5000",
+					"path": [
+						"api",
+						"register"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "localhost:5000/api/login",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n    \"email\" : \"tamil@gmail.com\",\r\n    \"password\" : \"123456\"\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "localhost:5000/api/login",
+					"host": [
+						"localhost"
+					],
+					"port": "5000",
+					"path": [
+						"api",
+						"login"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "localhost:5000/api/modify/61e63cac1a6c5b6d226a8463",
+			"request": {
+				"method": "PUT",
+				"header": [
+					{
+						"key": "Authorization",
+						"value": "bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJkYXRhIjoidGFtaWxAZ21haWwuY29tIiwiaWF0IjoxNjQyNDc4ODczLCJleHAiOjE2NDI0ODI0NzN9.VJrJToP_NTRZinFj1LT16IhXKDmlGrdrQdWvKMOHFwI",
+						"type": "default"
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n    \"name\" : \"tamil-1\"\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "localhost:5000/api/modify/61e63cac1a6c5b6d226a8463",
+					"host": [
+						"localhost"
+					],
+					"port": "5000",
+					"path": [
+						"api",
+						"modify",
+						"61e63cac1a6c5b6d226a8463"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "localhost:5000/api/modify/61e63cac1a6c5b6d226a8463",
+			"request": {
+				"method": "DELETE",
+				"header": [
+					{
+						"key": "Authorization",
+						"value": "bearer ",
+						"type": "default"
+					}
+				],
+				"url": {
+					"raw": "localhost:5000/api/modify/61e63cac1a6c5b6d226a8463",
+					"host": [
+						"localhost"
+					],
+					"port": "5000",
+					"path": [
+						"api",
+						"modify",
+						"61e63cac1a6c5b6d226a8463"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "localhost:5000/api/modify/61e63cac1a6c5b6d226a8463",
+			"request": {
+				"method": "GET",
+				"header": [
+					{
+						"key": "Authorization",
+						"value": "bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJkYXRhIjoidGFtaWxAZ21haWwuY29tIiwiaWF0IjoxNjQyNDc4ODczLCJleHAiOjE2NDI0ODI0NzN9.VJrJToP_NTRZinFj1LT16IhXKDmlGrdrQdWvKMOHFwI",
+						"type": "default"
+					}
+				],
+				"url": {
+					"raw": "localhost:5000/api/modify/61e63cac1a6c5b6d226a8463",
+					"host": [
+						"localhost"
+					],
+					"port": "5000",
+					"path": [
+						"api",
+						"modify",
+						"61e63cac1a6c5b6d226a8463"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "localhost:5000/api/userslist",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "localhost:5000/api/userslist",
+					"host": [
+						"localhost"
+					],
+					"port": "5000",
+					"path": [
+						"api",
+						"userslist"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "localhost:5000/api/searchbyname?name=nithish",
+			"request": {
+				"method": "GET",
+				"header": [
+					{
+						"key": "Authorization",
+						"value": "bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJkYXRhIjoidGFtaWxAZ21haWwuY29tIiwiaWF0IjoxNjQyNDc4ODczLCJleHAiOjE2NDI0ODI0NzN9.VJrJToP_NTRZinFj1LT16IhXKDmlGrdrQdWvKMOHFwI",
+						"type": "default"
+					}
+				],
+				"url": {
+					"raw": "localhost:5000/api/searchbyname?name=nithish",
+					"host": [
+						"localhost"
+					],
+					"port": "5000",
+					"path": [
+						"api",
+						"searchbyname"
+					],
+					"query": [
+						{
+							"key": "name",
+							"value": "nithish"
+						}
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "localhost:5000/api/sort",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "localhost:5000/api/sort",
+					"host": [
+						"localhost"
+					],
+					"port": "5000",
+					"path": [
+						"api",
+						"sort"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "localhost:5000/api/pagination?limit=5&skip=2",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "localhost:5000/api/pagination?limit=5&skip=2",
+					"host": [
+						"localhost"
+					],
+					"port": "5000",
+					"path": [
+						"api",
+						"pagination"
+					],
+					"query": [
+						{
+							"key": "limit",
+							"value": "5"
+						},
+						{
+							"key": "skip",
+							"value": "2"
+						}
+					]
+				}
+			},
+			"response": []
+		}
+	]
+}
